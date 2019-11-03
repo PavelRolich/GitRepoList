@@ -1,1 +1,6 @@
-<p>repo-list works!</p>
+<div class="container">
+  <input [formControl]="findControl" placeholder="GitHub username" />
+  <ul class="list">
+    <li class="list-item" *ngFor="let repo of repositList[0]"><p>{{repo.name}}</p></li>
+  </ul>
+</div>
